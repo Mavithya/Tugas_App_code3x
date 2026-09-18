@@ -6,7 +6,7 @@ const IllustrationPanel = () => {
       sx={{
         width: "100%",
         height: "100%",
-        minHeight: { xs: 420, md: 600 },
+        minHeight: { xs: 350, md: 600 },
         borderRadius: "22px",
         backgroundColor: "#f3f8ee",
         display: "flex",
@@ -22,7 +22,7 @@ const IllustrationPanel = () => {
         src="/illustration.svg"
         alt="illustration"
         sx={{
-          width: "82%",
+          width: { xs: "70%", sm: "65%", md: "82%" },
           maxWidth: 430,
           height: "auto",
           objectFit: "contain",
