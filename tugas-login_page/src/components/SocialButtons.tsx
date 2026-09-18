@@ -28,9 +28,12 @@ const SocialButtons = () => {
       );
 
       window.location.href = "/token";
-    } catch (error) {
-      console.error("Google sign-in failed:", error);
-      setError("Google sign-in failed. Please try again.");
+    } catch (error: any) {
+      console.error("Google sign-in failed");
+      console.error("Error code:", error.code);
+      console.error("Error message:", error.message);
+
+      setError(error.message || "Google sign-in failed.");
     } finally {
       setLoading(false);
     }
