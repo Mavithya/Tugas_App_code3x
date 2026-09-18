@@ -1,6 +1,5 @@
 import {
   Box,
-  Button,
   Divider,
   Link,
   Typography,
@@ -76,46 +75,6 @@ const LoginPage = () => {
 
           <LoginForm />
 
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "flex-end",
-              marginTop: 1,
-              marginBottom: 2.5,
-            }}
-          >
-            <Link
-              href="#"
-              underline="none"
-              sx={{
-                fontSize: 12,
-                color: "#222",
-              }}
-            >
-              Forgot Password?
-            </Link>
-          </Box>
-
-          <Button
-            fullWidth
-            variant="contained"
-            sx={{
-              height: 44,
-              borderRadius: "24px",
-              backgroundColor: "#000",
-              color: "#fff",
-              textTransform: "none",
-              fontSize: 14,
-              fontWeight: 600,
-              boxShadow: "none",
-              "&:hover": {
-                backgroundColor: "#222",
-                boxShadow: "none",
-              },
-            }}
-          >
-            Login
-          </Button>
 
           <Box
             sx={{
@@ -139,7 +98,7 @@ const LoginPage = () => {
 
             <Divider sx={{ flex: 1 }} />
           </Box>
-
+          {/* SOCIAL BUTTONS */}
           <SocialButtons />
 
           <Box
