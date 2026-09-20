@@ -17,6 +17,7 @@ const LoginPage = () => {
         width: "100%",
         display: "flex",
         alignItems: "center",
+        textAlign: "center",
         justifyContent: "center",
         backgroundColor: "#fff",
         padding: { xs: 2, md: 3 },
